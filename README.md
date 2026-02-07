@@ -43,11 +43,18 @@ El script utiliza la librería Scapy para construir tramas de Capa 2 personaliza
 
 <img width="587" height="345" alt="image" src="https://github.com/user-attachments/assets/434a0f92-1198-47c8-8116-8001b0ed4faf" />
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 <img width="997" height="716" alt="image" src="https://github.com/user-attachments/assets/8248fd4b-f07f-46d4-9fe7-faea49462847" />
 
 
+## 6. Medidas de Mitigación
+Para proteger la infraestructura contra este tipo de ataques, se deben implementar las siguientes mejores prácticas:
 
-
+* **Desactivar CDP Globalmente:** Si el protocolo no es estrictamente necesario, usar no cdp run.
+* **Desactivar CDP en Puertos de Usuario:** Deshabilitar el protocolo en todas las interfaces que conectan a dispositivos finales (PCs, laptops) con el comando no cdp enable en la interfaz.
+* **Control Plane Policing (CoPP):** Configurar políticas que limiten la cantidad de paquetes CDP que el procesador del switch puede recibir por segundo.
+* **Habilitar Port-Security:** Aunque CDP es capa 2, limitar el número de MACs por puerto puede ayudar a mitigar el impacto colateral de herramientas de ataque
 
 
 
