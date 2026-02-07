@@ -1,5 +1,3 @@
-# DoS-mediante-el-protocolo-CDP.
-
 # Documentación Técnica: CDP Resource Exhaustion (DoS)
 ## 1. Objetivo del Script
 El objetivo de este script es realizar un ataque de Denegación de Servicio (DoS) orientado al agotamiento de recursos del Plano de Control en dispositivos Cisco. Aprovechando que el protocolo CDP (Cisco Discovery Protocol) no requiere autenticación, el script inunda al switch con miles de anuncios de vecinos falsos ("Fake Neighbors"). Esto busca saturar la memoria RAM asignada al proceso CDP y elevar el uso de CPU, lo que en equipos reales o con recursos limitados puede provocar inestabilidad, lentitud en la gestión o el reinicio del dispositivo.
