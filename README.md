@@ -12,7 +12,8 @@ Atacante: Ubuntu Linux (Python 3 + Scapy).
 
 Objetivo: Cisco Switch (IOSvL2).
 
-Interfaz de conexión: eth0 (Atacante) conectada a Eth 0/2 (Switch).
+Interfaz de conexión: eth0 (Atacante) conectada a Eth 0/1 (Switch).
+NOTA: En el Switch no se uso vlans.
 
 | Dispositivo | Interfaz | Rol       | Configuración Especial        |
 |-------------|----------|-----------|--------------------------------|
